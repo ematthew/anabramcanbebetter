@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/
+    - export BASEPATH=/home/user/master/
+    - /bin/cp -R $BASEPATH $DEPLOYPATH
+    - /bin/cp -a $BASEPATH $DEPLOYPATH
