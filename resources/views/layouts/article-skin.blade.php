@@ -10,7 +10,7 @@
     <!-- Title -->
     <title>{{ env("APP_NAME") }} | @yield('title') </title>
 
-    <meta name="description" content="{{ strip_tags($article->contents) }}" />
+    {{-- <meta name="description" content="{{ strip_tags($article->contents) }}" />
     <meta name="keywords" content="Blog, Entertainment, Musics, Arts, Videos, Fashion, Lifestyle, Latest, Trending, News, Headlines, Technology, Twitter, Google, Facebook, Youtube" />
     <meta name="author" content="Ekpoto Network" />
     <meta property="fb:app_id" content="1294111604081869" />
@@ -19,13 +19,13 @@
     <meta property="og:url" content="{{ Request::url() }}"/>
     <meta property="og:site_name" content="{{ env("APP_NAME") }}"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:description" content="{{ strip_tags($article->contents) }}"/>
+    <meta property="og:description" content="{{ strip_tags($article->contents) }}"/> --}}
 
     {{-- Twitter Section --}}
-    <meta name="twitter:title" content="{{ $article->title }}" />
+    {{-- <meta name="twitter:title" content="{{ $article->title }}" />
     <meta name="twitter:image" content="{{ $article->avatar }}" />
     <meta name="twitter:url" content="{{env("APP_URL")}}" />
-    <meta name="twitter:card" content="{{ strip_tags($article->contents) }}" />
+    <meta name="twitter:card" content="{{ strip_tags($article->contents) }}" /> --}}
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('img/core-img/favicon.ico')}}">
@@ -38,7 +38,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:200,300,400,500,600,700">
 
     {{-- Cookie Policy --}}
-    <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
+    {{-- <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/> --}}
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/default-assets/classy-nav.css')}}">
@@ -104,11 +104,11 @@
     <script src="{{asset('js/sweetalert.min.js')}}"></script>
     
     {{-- cookie policy --}}
-    <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+   {{--  <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
     <script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#f0edff","text":"#000000","border":"#5e65c2"},"button":{"background":"#5e65c2","text":"#ffffff"}},"position":"bottom","transparency":"25","content":{"href":"ebn.ng","message":"Welcome to EBN Network, this website uses cookies to ensure you get the best experience on our website.","link":"www.ebn.ng/policy"}})});</script>
-
+ --}}
     <!-- facebook -->
-    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+    {{-- <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script type="text/javascript">
         window.fbAsyncInit = function() {
             FB.init({
@@ -127,7 +127,7 @@
             js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script> --}}
     @yield('scripts')
 </body>
 </html>
