@@ -32,8 +32,8 @@ class Admin extends Model
     	// body
     	$admin 				= new Admin();
     	$admin->name 		= "Admin User";
-    	$admin->email 		= "admin@ebn.ng";
-    	$admin->password 	= bcrypt("welcome2ebn12345");
+    	$admin->email 		= "admin@anambracanbebetter.org.ng";
+    	$admin->password 	= bcrypt("password12345");
     	$admin->role     	= 1;
     	$admin->status   	= true;
     	$admin->save();
